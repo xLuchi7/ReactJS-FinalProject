@@ -1,0 +1,15 @@
+.flexx{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(230, 228, 228)
+}
+.grid-section{
+    display: grid;
+    grid-template-columns: 330px 330px 330px;
+    grid-template-rows: 400px 400px;
+    column-gap: 15px;
+    row-gap: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-bottom: 60px;
+}
