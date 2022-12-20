@@ -1,0 +1,14 @@
+.detail-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 330px;
+    height: 410px;
+    margin-top: 40px;
+    margin-bottom: 390px;
+}
+.detail-back{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(230, 228, 228);
+}

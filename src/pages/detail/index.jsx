@@ -15,7 +15,11 @@ const Detail = () => {
     return(
         <div>
             <NavBar />
-            <Card product={state} key={state?.name} onSelect={() => {}} />
+            <div className="detail-back">
+                <div className="detail-container">
+                    <Card product={state} key={state?.name} onSelect={() => {}} />
+                </div>
+            </div>
         </div>
     )
 }

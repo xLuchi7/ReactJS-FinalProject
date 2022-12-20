@@ -17,9 +17,9 @@ const Home = () => {
             <NavBar />
             <div className="flexx">
                 <section className="grid-section">
-                {PRODUCTS.map((product) => (
-                    <Card product={product} key={product.id} onSelect={onHandlerSelect} />
-                ))}
+                    {PRODUCTS.map((product) => (
+                        <Card product={product} key={product.id} onSelect={onHandlerSelect} />
+                    ))}
                 </section>
             </div>
         </div>
