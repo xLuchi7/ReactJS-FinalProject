@@ -98,7 +98,7 @@ a{
     justify-content: space-between;
 }
 .bi-cart2{
-    margin-left: 2rem;
+    /* margin-left: 2rem; */
     margin-top: 3px;
 }
 .bi-1-circle-fill{
@@ -107,4 +107,31 @@ a{
 }
 .log-in-button:hover{
     color: rgba(255, 166, 0, 0.993);
+}
+.register-button{
+    color: black;
+    text-decoration: none;
+}
+.register-button:hover{
+    color: white;
+}
+.cart-logo-container{
+    display: flex;
+    margin-left: 2rem;
+    cursor: pointer;
+}
+.cart-number-container{
+    width: 16px;
+    height: 16px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 25px;
+    margin-top: -36px;
+}
+.cart-number{
+    font-size: 0.9rem;
+    color: black;
 }

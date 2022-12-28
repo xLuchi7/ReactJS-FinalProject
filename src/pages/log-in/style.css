@@ -1,0 +1,65 @@
+.background{
+    background-color: rgb(35, 44, 44);
+}
+.titulo-iniciar{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    text-decoration: none;
+    color: white;
+    font-size: 35px;
+}
+.titulo-iniciar:hover{
+    color: rgba(255, 166, 0, 0.993);
+}
+.div-log-in{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.iniciar-texto{
+    text-align: center;
+    font-size: 40px;
+    margin-top: 169px;
+}
+.inicio-card{
+    display: flex;
+    flex-direction: column;
+}
+.correo{
+    padding-top: 124px;
+    margin-bottom: 8px;
+}
+.barra-correo{
+    height: 32px;
+    width: 300px;
+    border: 2px solid grey;
+    border-radius: 5px;
+    padding-left: 5px;
+}
+.contra{
+    padding-top: 30px;
+    margin-bottom: 8px;
+}
+.enter{
+    border: 2px solid rgba(255, 166, 0, 0.993); 
+    border-radius: 5px;
+    background-color: rgba(255, 166, 0, 0.993);
+    height: 30px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 260px;
+    margin-right: 500px;
+}
+.log-in-button-text{
+    text-decoration: none;
+    color: black;
+    transition: transform;
+}
+.log-in-button-text:hover{
+    color: white;
+}

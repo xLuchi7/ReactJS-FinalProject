@@ -1,14 +1,122 @@
 .detail-container{
+    width: 70%;
+    height: 70%;
+    background-color: white;
+    margin-top: 50px;
+    border-radius: 4px;
+    box-shadow: 0 0 4px black;
+    display: flex;
+    justify-content: center;
+    
+}
+.detail-back{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(230, 228, 228)
+}
+.detail-photo{
+    width: 50%;
+}
+.d-block{
+    /* height: 40%;
+    max-width: 90%; */
+    margin-left: 30px;
+}
+.d-block:hover{
+    transform: scale(1.05);
+}
+.carousel-inner{
+    max-width: 600px;
+}
+.carousel-indicators{
+    margin-bottom: -15px;
+}
+#carouselExampleDark{
+    /* position: static; */
+}
+.detail-description{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.detail-title{
+    margin-top: 70px;
+}
+.detail-price{
+    margin-top: 20px;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.detail-details{
+    margin-top: 10px;
+    margin-left: -10px;
+}
+.detail-button-plus{
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.1s ease-in-out;
+}
+.detail-button-minus{
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.1s ease-in-out;
+}
+.detail-input{
+    background-color: white;
+    border:  1px solid black;
+    width: 2rem;
+    height: 2rem;
+    font-size: 1rem;
+    margin: 0 0.5rem;
+    text-align: center;
+}
+.add-to-cart-button{
+    border-radius: 5px;
+    background-color: rgba(255, 166, 0, 0.993);
+    height: 44px;
+    width: 89%;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 330px;
-    height: 410px;
-    margin-top: 40px;
-    margin-bottom: 390px;
+    margin-top: 28px;
+    margin-left: 3px;
 }
-.detail-back{
+.add-to-cart-button:hover{
+    cursor: pointer;
+}
+.add-to-cart-text{
+    margin-top: 3px;
+    color: white;
+    font-size: 22px;
+}
+.detail-alert{
+    border-radius: 5px;
+    background-color: rgba(255, 166, 0, 0.993);
+    height: 24px;
+    width: 95px;
     display: flex;
     justify-content: center;
-    background-color: rgb(230, 228, 228);
+    align-items: center;
+    margin-top: 8px;
+    margin-left: 2px;
+}
+.detail-alert-text{
+    margin-top: 7px;
+    color: white;
+    font-size: 12px;
 }

@@ -1,0 +1,26 @@
+.cart-main{
+    background-color: rgb(230, 228, 228);
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+.cart-container{
+    width: 60%;
+    height: 50%;
+    background-color: white;
+    margin-top: 50px;
+    border-radius: 4px;
+    box-shadow: 0 0 4px black;
+}
+.cart-title{
+    margin-left: 100px;
+    margin-top: 40px;
+}
+.line{
+    height: 2px;
+    background-color: rgb(221, 218, 218);
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 25px;
+}

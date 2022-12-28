@@ -7,14 +7,18 @@ import Card from "../../components/card";
 
 const Home = () => {
     const navigate = useNavigate();
+    
     const onHandlerSelect = (product) => {
         console.log(product);
         navigate('/product/${product.id}', {state: product})
     }
+    const onHandlerCart = () => {
+        console.log("LO TOQUE")
+    }
+
     return(
-        
         <div>
-            <NavBar />
+            <NavBar onHandlerCart={onHandlerCart}/>
             <div className="flexx">
                 <section className="grid-section">
                     {PRODUCTS.map((product) => (

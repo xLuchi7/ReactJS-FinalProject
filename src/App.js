@@ -1,10 +1,13 @@
 import React from 'react';
 import './App.css';
+import { CartProvider } from './context';
 import Router from './Router/index';
 
 const App = () => {
   return (
-     <Router /> 
+    <CartProvider>
+      <Router />
+    </CartProvider> 
   );
 }
  

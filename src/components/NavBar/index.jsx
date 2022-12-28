@@ -2,7 +2,7 @@ import React from "react";
 import './style.css';
 import { Link } from "react-router-dom";
 
-const NavBar = () => {
+const NavBar = ({onHandlerCart}) => {
     return (
         <div className="cabeza">
           <nav className="navbar navbar-expand-lg navbar-light">
@@ -28,35 +28,35 @@ const NavBar = () => {
               <div className="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                   <li className="nav-item dropdown">
-                    <a className="nav-link dropdown-toggle " href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a className="nav-link dropdown-toggle " id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                       Idioma
                     </a>
                     <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <li><a className="dropdown-item" href="#">English</a></li>
-                      <li><a className="dropdown-item" href="#">Español</a></li>
-                      <li><a className="dropdown-item" href="#">Portugues</a></li>
+                      <li><a className="dropdown-item">English</a></li>
+                      <li><a className="dropdown-item">Español</a></li>
+                      <li><a className="dropdown-item">Portugues</a></li>
                     </ul>
                   </li>
                   <li className="nav-item">
                     <div className="div5">
-                      <nav>
-                          <a className="log-in-button" href="#"><p>Iniciar Sesion</p></a>
-                      </nav>
-                  </div>
+                      <Link to='/log-in' ><p className="log-in-button">Iniciar Sesion</p></Link>
+                    </div>
                   </li>
                   <div className="indexx">
                     <div className="div6">
-                      <nav>
-                          <a className="negro" href="#"><p>Registrarse</p></a>
-                      </nav>
+                      <Link to='/register' ><p className="register-button">Registrarse</p></Link>
                     </div>
                   </div>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="white" className="bi bi-cart2" viewBox="0 0 16 16">
+                  <div className="cart-logo-container" onClick={onHandlerCart}>
+                    <Link to='/carrito'>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="white" className="bi bi-cart2" viewBox="0 0 16 16">
                         <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/>
-                    </svg>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" className="bi bi-1-circle-fill" viewBox="0 0 16 16">
-                        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0ZM9.283 4.002H7.971L6.072 5.385v1.271l1.834-1.318h.065V12h1.312V4.002Z"/>
-                    </svg>
+                      </svg>
+                      <div className="cart-number-container">
+                        <span className="cart-number">1</span>
+                      </div>
+                    </Link>
+                  </div>
                 </ul>
               </div>
             </div>
