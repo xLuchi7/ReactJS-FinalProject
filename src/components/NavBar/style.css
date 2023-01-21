@@ -3,15 +3,14 @@
     justify-content: center;
     align-items: center;
     background-color: rgb(35, 44, 44);
+    border-bottom: 1px solid gray;
 }
 .div1{
     height: 80px;
     width: 180px;
-    /*margin-bottom: 7px;*/
     display: flex;
     flex-direction: row;
     align-items: center;
-    /*border: 2px solid blue;*/
 }
 .div1:hover{
     color: blue;
@@ -32,6 +31,94 @@
     padding-left: 5px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
+}
+@media screen and (max-width: 990px){
+    .d-flex{
+        margin-top: -15px;
+        margin-left: -50px;
+   
+    }
+}
+@media screen and (max-width: 1236px){
+    .input{
+        width: 400px;
+    }
+}
+@media screen and (max-width: 1142px){
+    .input{
+        width: 300px;
+    }
+}
+@media screen and (max-width: 1036px){
+    .input{
+        width: 250px;
+    }
+}
+@media screen and (max-width: 990px){
+    .input{
+        width: 650px;
+    }
+}
+@media screen and (max-width: 990px){
+    .d-flex{
+        margin-right: 40px;
+    }
+}
+@media screen and (max-width: 906px){
+    .d-flex{
+        margin-right: 10px;
+    }
+}
+@media screen and (max-width: 868px){
+    .input{
+        width: 550px;
+    }
+}
+@media screen and (max-width: 770px){
+    .input{
+        width: 450px;
+    }
+}
+@media screen and (max-width: 710px){
+    .input{
+        width: 380px;
+    }
+}
+@media screen and (max-width: 600px){
+    .input{
+        width: 300px;
+    }
+}
+@media screen and (max-width: 510px){
+    .input{
+        width: 200px;
+    }
+}
+@media screen and (max-width: 408px){
+    .input{
+        width: 170px;
+    }
+}
+@media screen and (max-width: 380px){
+    .input{
+        width: 150px;
+    }
+}
+@media screen and (max-width: 365px){
+    .input{
+        width: 140px;
+    }
+}
+@media screen and (max-width: 350px){
+    .input{
+        width: 130px;
+    }
+    .d-flex{
+        margin-right: 0px;
+    }
+}
+.navbar-toggler{
+    display: none;
 }
 .bi-search{
     width: 20px;
@@ -57,6 +144,16 @@
     font-family: Arial, Helvetica, sans-serif;
     color: white;
     text-decoration: none;
+}
+@media screen and (max-width: 452px){
+    .titulo{
+        font-size: 23px;
+        margin-top: 0px;
+    }
+    .bi-controller{
+        width: 29px;
+        height: 29px;
+    }
 }
 .titulo:hover{
     color: rgba(255, 166, 0, 0.993);
@@ -98,7 +195,6 @@ a{
     justify-content: space-between;
 }
 .bi-cart2{
-    /* margin-left: 2rem; */
     margin-top: 3px;
 }
 .bi-1-circle-fill{
@@ -120,6 +216,13 @@ a{
     margin-left: 2rem;
     cursor: pointer;
 }
+@media screen and (max-width: 990px){
+    .cart-logo-container{
+        margin-bottom: 25px;
+        margin-top: 12px;
+        padding-left: 18px;
+    }
+}
 .cart-number-container{
     width: 16px;
     height: 16px;
@@ -134,4 +237,37 @@ a{
 .cart-number{
     font-size: 0.9rem;
     color: black;
+}
+#ya-registrado{
+    margin-left: 30px;
+    display: none;
+}
+@media screen and (max-width: 990px){
+    #ya-registrado{
+        margin-top: 5px;
+        padding-left: 17px;
+    }
+}
+#ya-registrado:hover{
+    cursor: pointer;
+}
+#cerrar{
+    color: red;
+}
+#cerrar:hover{
+    background-color: rgb(228, 227, 227);
+}
+.change-mode-container{
+    margin-top: 9px;
+}
+#mode{
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: -15px;
+    margin-left: 40px;
+}
+#sol{
+    display: none;
 }

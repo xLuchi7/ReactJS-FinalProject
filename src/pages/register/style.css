@@ -1,6 +1,11 @@
 .register-texto{
     text-align: center;
-    font-size: 35px;
-    margin-top: 81px;
-    margin-right: 22rem;
+    font-size: 40px;
+    margin-top: 169px;
+    margin-left: -280px;
+}
+@media screen and (max-width: 839px){
+    .register-texto{
+        margin-left: 0px;
+    }
 }

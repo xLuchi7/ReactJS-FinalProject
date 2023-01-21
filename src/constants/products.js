@@ -13,6 +13,9 @@ export const PRODUCTS = [
         image2: "https://www.venex.com.ar/products_images/1558029665_xl25462.png",
         image3: "https://www.newmaster.com.ar/wp-content/uploads/2018/10/5.jpg",
         stars: 5,
+        halfExtraStar: 0, //0 for no and 1 for yes
+        opinions: 145,
+        quantity: 1,
     },
     {
         id: 2,
@@ -28,6 +31,9 @@ export const PRODUCTS = [
         image2: "https://http2.mlstatic.com/D_NQ_NP_650643-MLA40782098031_022020-O.webp",
         image3: "https://http2.mlstatic.com/D_NQ_NP_832575-MLA46273166067_062021-O.webp",
         stars: 4,
+        halfExtraStar: 1, //0 for no and 1 for yes
+        opinions: 95,
+        quantity: 1,
     },
     {
         id: 3,
@@ -43,6 +49,9 @@ export const PRODUCTS = [
         image2: "https://http2.mlstatic.com/D_NQ_NP_683255-MLA45683745820_042021-O.webp",
         image3: "https://http2.mlstatic.com/D_NQ_NP_625750-MLA45683745826_042021-O.webp",
         stars: 3,
+        halfExtraStar: 1, //0 for no and 1 for yes
+        opinions: 74,
+        quantity: 1,
     },
     {
         id: 4,
@@ -58,6 +67,9 @@ export const PRODUCTS = [
         image2: "https://http2.mlstatic.com/D_NQ_NP_650785-MLA44174322700_112020-O.webp",
         image3: "https://upload.wikimedia.org/wikipedia/commons/7/71/Sony-PlayStation-4-PS4-wDualShock-4.jpg",
         stars: 4,
+        halfExtraStar: 0, //0 for no and 1 for yes
+        opinions: 229,
+        quantity: 1,
     },
     {
         id: 5,
@@ -73,6 +85,9 @@ export const PRODUCTS = [
         image2: "https://arsonyb2c.vtexassets.com/arquivos/ids/292249-800-800?v=637105416256400000&width=800&height=800&aspect=true",
         image3: "https://www.tiendacpu.com/103-large_default/sony-dualshock-4-v2-negro-mando-inalambrico-ps4.jpg",
         stars: 4,
+        halfExtraStar: 1, //0 for no and 1 for yes
+        opinions: 317,
+        quantity: 1,
     },
     {
         id: 6,
@@ -88,5 +103,8 @@ export const PRODUCTS = [
         image2: "https://http2.mlstatic.com/D_NQ_NP_723487-MLA52989835686_122022-O.webp",
         image3: "https://techbuysv.com/wp-content/uploads/2016/03/image-4-1.jpg",
         stars: 4,
+        halfExtraStar: 1, //0 for no and 1 for yes
+        opinions: 116,
+        quantity: 1,
     },
 ]

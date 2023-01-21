@@ -1,13 +1,12 @@
 .background{
-    background-color: rgb(35, 44, 44);
+    background-color: rgb(39, 43, 43);
 }
 .titulo-iniciar{
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 30px;
+    padding-left: 40px;
     text-decoration: none;
     color: white;
     font-size: 35px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 .titulo-iniciar:hover{
     color: rgba(255, 166, 0, 0.993);
@@ -24,9 +23,20 @@
     font-size: 40px;
     margin-top: 169px;
 }
+@media screen and (max-width: 425px){
+    .iniciar-texto{
+        font-size: 30px;
+    }
+}
 .inicio-card{
     display: flex;
     flex-direction: column;
+    margin-left: -400px;
+}
+@media screen and (max-width: 839px){
+    .inicio-card{
+        margin-left: 0px;
+    }
 }
 .correo{
     padding-top: 124px;
@@ -53,7 +63,10 @@
     justify-content: center;
     margin-top: 50px;
     margin-bottom: 260px;
-    margin-right: 500px;
+    
+}
+.enter:hover{
+    color: white;
 }
 .log-in-button-text{
     text-decoration: none;
@@ -62,4 +75,43 @@
 }
 .log-in-button-text:hover{
     color: white;
+}
+.derecho{
+    display: flex;
+    flex-direction: row;
+}
+.check{
+    width: 26px;
+    height: 26px;
+    margin-top: 3px;
+    margin-left: 5px;
+    display: none;
+}
+.cross{
+    width: 26px;
+    height: 26px;
+    margin-top: 3px;
+    margin-left: 5px;
+    display: none;
+}
+.aproved{
+    color: rgb(7, 184, 7);
+    font-style: italic;
+    margin-top: 5px;
+    margin-left: 3px;
+    display: none;
+}
+.rejected{
+    color: red;
+    font-style: italic;
+    margin-top: 5px;
+    margin-left: 3px;
+    display: none;
+}
+.log-in-header-container{
+    border-bottom: 1px solid grey;
+    height: 90px;
+    display: flex;
+    align-items: center;
+
 }

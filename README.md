@@ -39,32 +39,35 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+...
+## Pre-requisitos
+- [Visual Studio Code]('https://code.visualstudio.com/')
+- [NodeJS > 16]('https://nodejs.org') y npm
+(Recomendacion usar [nvm](https://github.com/nvm-sh/nvm))
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+...
+## Estructura de Carpetas
+- 'src': Es la carpeta contenedora de todo nuestro codigo
+ dentro de la aplicacion de React y contiene todas las
+ funcionalidades.
+- 'src' se encuentran todas las carpetas que 
+ componen la app. 
+ 'components': se encuentran todos los componentes que
+ usamos en la aplicacion. como la 'card' de los productos.
+ el 'footer' que es el pie de pagina. 'half-star' es un 
+ componente que develve o no una mitad de estrella extra
+ de la valoracion de los usuarios.
+ 'loader' es lo que se ejecuta antes de cargar cada vista.
+ 'navbar' es el header de la app.
+ 'stars' son las estrellas de valoracion de las opiniones
+ de distintos usuarios.
+- 'constants': se encuentra la base de datos intera
+'products.js'.
+- 'context': se encuentra el contexto que usamos en la 
+app para compartir datos sobre el carrito y otras
+funcionalidades.
+- 'pages': estan todas las vistas de la app: carrito,
+detail, home, log-in y register.
+- 'router': es donde se colocan las rutas de nuesta app.
+ 
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

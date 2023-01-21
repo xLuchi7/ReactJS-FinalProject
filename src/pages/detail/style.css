@@ -1,27 +1,46 @@
 .detail-container{
-    width: 70%;
-    height: 70%;
+    width: 80%;
+    height: 650px;
     background-color: white;
-    margin-top: 50px;
     border-radius: 4px;
     box-shadow: 0 0 4px black;
     display: flex;
     justify-content: center;
     
 }
+@media screen and (max-width: 1000px){
+    .detail-container{
+        width: 90%;
+    }
+}
+@media screen and (max-width: 970px){
+    .detail-container{
+        width: 98%;
+        flex-direction: column;
+        height: 1000px;
+    }
+}
 .detail-back{
-    height: 100vh;
-    width: 100vw;
+    height: 780px;
     display: flex;
     justify-content: center;
+    align-items: center;
     background-color: rgb(230, 228, 228)
+}
+@media screen and (max-width: 970px){
+    .detail-back{
+        height: 1200px;
+    }
 }
 .detail-photo{
     width: 50%;
 }
+@media screen and (max-width: 970px){
+    .detail-photo{
+        width: 70%;
+    }
+}
 .d-block{
-    /* height: 40%;
-    max-width: 90%; */
     margin-left: 30px;
 }
 .d-block:hover{
@@ -33,17 +52,20 @@
 .carousel-indicators{
     margin-bottom: -15px;
 }
-#carouselExampleDark{
-    /* position: static; */
-}
 .detail-description{
     width: 50%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
 }
+@media screen and (max-width: 990px){
+    .detail-description{
+        width: 100%;
+        margin-left: 30px;
+    }
+}
 .detail-title{
-    margin-top: 70px;
+    margin-top: 50px;
 }
 .detail-price{
     margin-top: 20px;
@@ -53,37 +75,6 @@
 .detail-details{
     margin-top: 10px;
     margin-left: -10px;
-}
-.detail-button-plus{
-    background-color: white;
-    border: 1px solid black;
-    border-radius: 50%;
-    width: 2rem;
-    height: 2rem;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    transition: all 0.1s ease-in-out;
-}
-.detail-button-minus{
-    background-color: white;
-    border: 1px solid black;
-    border-radius: 50%;
-    width: 2rem;
-    height: 2rem;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    transition: all 0.1s ease-in-out;
-}
-.detail-input{
-    background-color: white;
-    border:  1px solid black;
-    width: 2rem;
-    height: 2rem;
-    font-size: 1rem;
-    margin: 0 0.5rem;
-    text-align: center;
 }
 .add-to-cart-button{
     border-radius: 5px;
@@ -96,8 +87,20 @@
     margin-top: 28px;
     margin-left: 3px;
 }
+@media screen and (max-width: 970px){
+    .add-to-cart-button{
+        width: 95%;
+        margin-left: -10px;
+    }
+}
+@media screen and (max-width: 578px){
+    .add-to-cart-button{
+        margin-left: -20px;
+    }
+}
 .add-to-cart-button:hover{
     cursor: pointer;
+    background-color: rgba(0, 132, 255, 0.993);
 }
 .add-to-cart-text{
     margin-top: 3px;
@@ -119,4 +122,13 @@
     margin-top: 7px;
     color: white;
     font-size: 12px;
+}
+.detail-rating-content{
+    display: flex;
+    flex-direction: row;
+}
+.detail-rating-number{
+    color: orange;
+    margin-left: 2px;
+    margin-top: 2px;
 }
