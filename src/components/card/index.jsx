@@ -11,7 +11,7 @@ const Card = ({ product, onSelect }) =>{
             <img className="card-image" src={image} alt={name} />
             <h3 className="card-price">$ {price}</h3>
             <div className="buy-button">
-                <a className="buy-button-text"><h6>Ver mas</h6></a>
+                <h6 className="buy-button-text">Ver mas</h6>
             </div>
         </div>
     )

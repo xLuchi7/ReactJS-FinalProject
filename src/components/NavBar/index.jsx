@@ -15,13 +15,13 @@ const NavBar = () => {
     const registrarseBoton = document.getElementById("register-text");
     const persona = document.getElementById("ya-registrado");
 
-    if (estado == "registrado") {
+    if (estado === "registrado") {
       inicarSesionTexto.style.display="none";
       registrarseBoton.style.display="none";
       persona.style.display="block";
       document.getElementById("navbarDropdown").style.marginTop="-0px";
     }
-    if (estado != "registrado") {
+    if (estado !== "registrado") {
       inicarSesionTexto.style.display="block";
       registrarseBoton.style.display="block";
       persona.style.display="none";
@@ -56,13 +56,13 @@ const NavBar = () => {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item dropdown">
-                <a className="nav-link dropdown-toggle " href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <a className="nav-link dropdown-toggle " id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Idioma
                 </a>
                 <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a className="dropdown-item" href="#">English</a></li>
-                  <li><a className="dropdown-item" href="#">Español</a></li>
-                  <li><a className="dropdown-item" href="#">Portugues</a></li>
+                  <li><a className="dropdown-item" >English</a></li>
+                  <li><a className="dropdown-item" >Español</a></li>
+                  <li><a className="dropdown-item" >Portugues</a></li>
                 </ul>
               </li>
               <li className="nav-item">

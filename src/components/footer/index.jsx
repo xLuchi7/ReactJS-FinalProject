@@ -12,13 +12,13 @@ const Footer = () => {
           <img src={img} className="payment-img" alt="metodos de pago"/>
           <h3>Eleji como pagar</h3>
           <p className="payment-title">Podes pagar con tarjeta, debito, efectivo y hasta con 12 cuotas sin interes en Venta Gamer.</p>
-          <a className="payment-text">Elejir metodo de pago</a>
+          <p className="payment-text">Elejir metodo de pago</p>
         </div>
         <div className="shipment">
           <img src={imgg} className="shipment-img" alt="envios gratis"/>
           <h3>Envios gratis</h3>
           <p className="shipment-title">Solo por estar registrado en Venta Gamer tenes envios gratis a todo el pais.</p>
-          <a className="shipment-text">Conoce mas sobre envios</a>
+          <p className="shipment-text">Conoce mas sobre envios</p>
         </div>
         <div className="community">
           <h3>Comunidad</h3>
