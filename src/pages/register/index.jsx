@@ -11,6 +11,8 @@ const Register = () => {
     registro = "no-registrado";
     sessionStorage.setItem("status", registro);
 
+    let emailRegistro = sessionStorage.getItem("email");
+
     const validateRegister = (e) => {
         e.preventDefault();
         e.preventDefault();
@@ -70,6 +72,9 @@ const Register = () => {
             }
         }
         if (mailAproved == true && passwordAproved == true && confirmPasswordAproved == true) {
+            emailRegistro = mailAdress.value;
+            sessionStorage.setItem("email", emailRegistro);
+            console.log("email del registro: ", emailRegistro);
             Swal.fire({
                 title: 'Registrado exitosamente',
                 icon: 'success',

@@ -50,6 +50,7 @@ const LogIn = () => {
         if (mailAproved == true && passwordAproved == true) {
             email = mailAdress.value;
             sessionStorage.setItem("email", email);
+            console.log("email: ", email);
             Swal.fire({
                 title: 'Inicio de sesion exitoso',
                 icon: 'success',
